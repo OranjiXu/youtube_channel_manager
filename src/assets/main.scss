@@ -1,0 +1,19 @@
+.new-group-button{
+  cursor: pointer;
+  height: 100%;
+  .el-card__body{
+    height: 100%;
+    background-color:rgb(160, 207, 255,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    i{
+      color: rgb(102, 177, 255);
+      font: 4em sans-serif;
+    }
+  }
+  .el-card__body:hover{
+    background-color:rgb(160, 207, 255);
+  }
+}

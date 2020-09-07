@@ -182,7 +182,7 @@ export default Vue.extend({
       // Parameters to pass to OAuth 2.0 endpoint.
       const params: { [T: string]: string } = {
         client_id: this.clientID,
-        redirect_uri: "http://localhost:8080/",
+        redirect_uri: process.env.VUE_APP_API_REDIRECT_URI,
         response_type: "token",
         scope: "https://www.googleapis.com/auth/youtube.readonly",
         include_granted_scopes: "true",
